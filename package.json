@@ -1,0 +1,13 @@
+{
+  "name": "stylus-gui",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.0",
+    "csswring": "^3.0.5",
+    "gaze": "^0.5.1",
+    "lodash": "^3.9.3",
+    "postcss": "^4.1.11",
+    "stylus": "^0.51.1"
+  }
+}
