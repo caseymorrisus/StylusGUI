@@ -3,6 +3,8 @@ StylusGUI
 
 This is a GUI for compiling Stylus files. 
 
+![stylusgui](https://raw.githubusercontent.com/caseymorrisus/StylusGUI/gh-pages/img/Preview.png)
+
 Quickstart
 ----------
 
