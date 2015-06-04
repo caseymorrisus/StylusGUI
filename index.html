@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Minnow - Image Minifier</title>
+    <title>StylusGUI</title>
     <link href="http://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Monda" rel="stylesheet" type="text/css">
     <!-- link(href='http://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400', rel='stylesheet', type='text/css')-->
     <link rel="stylesheet" href="css/styles.css">
     <body>
-      <nav> <a href="https://github.com/caseymorrisus/">Built by Casey Morris</a><a href="https://github.com/caseymorrisus/Minnowfier/">Repository</a></nav>
+      <nav> <a href="https://github.com/caseymorrisus/">Built by Casey Morris</a><a href="https://github.com/caseymorrisus/StylusGUI/">Repository</a></nav>
       <header> 
-        <h1>Minnow</h1>
-        <h3>Lossless image minification made easy</h3>
+        <h1>StylusGUI</h1>
+        <h3>GUI for Stylus compiling</h3>
       </header>
-      <div class="quickstart"><img src="img/minnow_preview.png">
+      <div class="quickstart"><img src="img/preview.png">
         <h1>Quick Start</h1>
         <ul>
-          <li>1. Choose an option:
+          <li>1. Choose options:
             <ul>
-              <li>Replace Images: Replaces any image you minify.</li>
-              <li>Add To Minified Folder: Creates a Minified folder and puts minified images there.</li>
+              <li>Compile To:
+                <ul>
+                  <li>Same Folder: CSS output is in same directory as Stylus file(s)</li>
+                  <li>CSS Folder: Goes up a directory and outputs to a CSS folder</li>
+                  <li>Choose: Choose a custom folder to output to</li>
+                </ul>
+              </li>
+              <li>Watch Folder?:
+                <ul>
+                  <li>Yes: Choose a folder to watch (compile on file change)</li>
+                </ul>
+              </li>
+              <li>CSS Options:
+                <ul>
+                  <li>Minify CSS: Choose if you want to minify your css (remove whitespace)</li>
+                  <li>Autoprefix CSS: Choose if you want to automatically add vendor-prefixes</li>
+                </ul>
+              </li>
             </ul>
           </li>
-          <li>2. Drag and drop an image or images onto the app.</li>
+          <li>2. Drag and drop stylus file(s) onto the app or save a file (if watch is enabled).</li>
           <li>3. Enjoy!</li>
         </ul>
-        <h1>Releases</h1><a href="https://github.com/caseymorrisus/Minnowfier/blob/gh-pages/releases/minnowfier-win32-ia32.rar?raw=true" download>Windows 32 Bit</a><a href="https://github.com/caseymorrisus/Minnowfier/blob/gh-pages/releases/minnowfier-win32-x64.rar?raw=true" download>Windows 64 Bit</a>
+        <h1>Releases</h1><a href="https://github.com/caseymorrisus/Minnowfier/blob/gh-pages/releases/minnowfier-win32-x64.rar?raw=true" download>Windows 64 Bit</a>
       </div>
       <footer>If you have any comments, suggestions, or want to talk about anything, you can email me at caseymorrisus@gmail.com<br><br>Built by <a href="https://github.com/caseymorrisus/">Casey Morris</a></footer>
     </body>

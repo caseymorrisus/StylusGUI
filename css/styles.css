@@ -265,7 +265,7 @@ blockquote {
   line-height: 1.45833333em;
 }
 nav {
-  background: #1e5f8a;
+  background: #1b7f45;
   color: #fff;
   padding: 25px;
   text-align: center;
@@ -281,23 +281,23 @@ nav a:hover {
 footer {
   margin-top: 100px;
   color: #fff;
-  background: #1e5f8a;
+  background: #1b7f45;
   padding: 25px;
   text-align: center;
 }
 footer a {
-  color: #3498db;
+  color: #2ecc71;
   text-decoration: none;
 }
 html {
-  background: #3498db;
+  background: #2ecc71;
 }
 body {
   text-align: center;
-  color: #1e5f8a;
+  color: #1b7f45;
 }
 header {
-  color: #1e5f8a;
+  color: #1b7f45;
   text-align: center;
   padding: 150px 0 50px 0;
 }
@@ -327,7 +327,7 @@ header h1 {
   display: block;
   width: 400px;
   box-sizing: border-box;
-  border: 3px solid #1e5f8a;
+  border: 3px solid #1b7f45;
   text-align: center;
 }
 .loading p {
@@ -340,7 +340,7 @@ header h1 {
 .loading .progress {
   top: 0;
   left: 0;
-  background: #1e5f8a;
+  background: #1b7f45;
   width: 0%;
   height: 100%;
   display: block;
@@ -356,7 +356,7 @@ header h1 {
   color: #222;
 }
 .documentation h1 {
-  color: #3498db;
+  color: #2ecc71;
   font-family: 'Monda', sans-serif;
   margin-bottom: 25px;
 }
@@ -390,7 +390,7 @@ header h1 {
   width: 15%;
 }
 .documentation td:first-of-type {
-  color: #3498db;
+  color: #2ecc71;
 }
 .documentation td:last-of-type {
   width: 40%;
@@ -431,7 +431,7 @@ header h1 {
 }
 .quickstart a {
   display: block;
-  color: #3498db;
+  color: #2ecc71;
   margin-bottom: 10px;
   margin-left: 40px;
 }
