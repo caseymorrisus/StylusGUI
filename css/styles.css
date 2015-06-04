@@ -1,0 +1,466 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  *behavior: url("/scripts/boxsizing.htc");
+/*	If you need support for IE7 and lower make 
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding-bottom: 0em;
+}
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gutters .col {
+    margin-left: 2%;
+  }
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .span_1 {
+    width: 8.33333333333%;
+  }
+  .span_2 {
+    width: 16.6666666667%;
+  }
+  .span_3 {
+    width: 25%;
+  }
+  .span_4 {
+    width: 33.3333333333%;
+  }
+  .span_5 {
+    width: 41.6666666667%;
+  }
+  .span_6 {
+    width: 50%;
+  }
+  .span_7 {
+    width: 58.3333333333%;
+  }
+  .span_8 {
+    width: 66.6666666667%;
+  }
+  .span_9 {
+    width: 75%;
+  }
+  .span_10 {
+    width: 83.3333333333%;
+  }
+  .span_11 {
+    width: 91.6666666667%;
+  }
+  .span_12 {
+    width: 100%;
+  }
+  .gutters .span_1 {
+    width: 6.5%;
+  }
+  .gutters .span_2 {
+    width: 15%;
+  }
+  .gutters .span_3 {
+    width: 23.5%;
+  }
+  .gutters .span_4 {
+    width: 32%;
+  }
+  .gutters .span_5 {
+    width: 40.5%;
+  }
+  .gutters .span_6 {
+    width: 49%;
+  }
+  .gutters .span_7 {
+    width: 57.5%;
+  }
+  .gutters .span_8 {
+    width: 66%;
+  }
+  .gutters .span_9 {
+    width: 74.5%;
+  }
+  .gutters .span_10 {
+    width: 83%;
+  }
+  .gutters .span_11 {
+    width: 91.5%;
+  }
+  .gutters .span_12 {
+    width: 100%;
+  }
+}
+html {
+  font-family: 'Arial';
+  font-size: 1em;
+}
+h1 {
+  font-family: 'Fugaz One', cursive;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+h2 {
+  font-family: 'Fugaz One', cursive;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+h3 {
+  font-family: 'Monda', sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+h4 {
+  font-family: 'Monda', sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.22222222em;
+}
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.45833333em;
+}
+nav {
+  background: #1e5f8a;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 40px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-top: 100px;
+  color: #fff;
+  background: #1e5f8a;
+  padding: 25px;
+  text-align: center;
+}
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+html {
+  background: #3498db;
+}
+body {
+  text-align: center;
+  color: #1e5f8a;
+}
+header {
+  color: #1e5f8a;
+  text-align: center;
+  padding: 150px 0 50px 0;
+}
+header h1 {
+  font-size: 10em;
+}
+.sample {
+  margin: 0 auto;
+  padding: 35px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.img-sequence {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 0 15px;
+  display: inline-block;
+}
+.img-sequence img {
+  display: none;
+}
+.loading {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 400px;
+  box-sizing: border-box;
+  border: 3px solid #1e5f8a;
+  text-align: center;
+}
+.loading p {
+  color: #ecf0f1;
+  font-weight: 900;
+  font-size: 2em;
+  position: relative;
+  z-index: 1;
+}
+.loading .progress {
+  top: 0;
+  left: 0;
+  background: #1e5f8a;
+  width: 0%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+.documentation {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 50px;
+  background: #ecf0f1;
+  color: #222;
+}
+.documentation h1 {
+  color: #3498db;
+  font-family: 'Monda', sans-serif;
+  margin-bottom: 25px;
+}
+.documentation hr {
+  border-top: none;
+  border-bottom: 1px solid #222;
+  margin-bottom: 25px;
+}
+.documentation h3 {
+  font-size: 1.4em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.documentation table {
+  width: 100%;
+}
+.documentation thead {
+  border-bottom: 1px solid #ccc;
+}
+.documentation th {
+  text-align: left;
+  width: 15%;
+  padding: 20px;
+  font-weight: 900;
+}
+.documentation th:last-of-type {
+  width: 40%;
+}
+.documentation td {
+  padding: 20px;
+  width: 15%;
+}
+.documentation td:first-of-type {
+  color: #3498db;
+}
+.documentation td:last-of-type {
+  width: 40%;
+}
+.quickstart {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  text-align: left;
+  background: #ecf0f1;
+  padding: 50px;
+}
+.quickstart img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+.quickstart p {
+  margin-bottom: 25px;
+}
+.quickstart h1 {
+  margin-bottom: 5px;
+}
+.quickstart h3 {
+  margin-bottom: 10px;
+}
+.quickstart ul {
+  margin-left: 40px;
+}
+.quickstart li {
+  margin-top: 10px;
+}
+.quickstart ul li ul li {
+  margin-left: 0px;
+  display: inline-block;
+}
+.quickstart h1:nth-of-type(2) {
+  margin-top: 30px;
+}
+.quickstart a {
+  display: block;
+  color: #3498db;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.code {
+  font-family: arial;
+  line-height: 1.4em;
+  color: #fff;
+  background: #222;
+  padding: 25px 50px;
+  margin-bottom: 50px;
+}
+.code span {
+  display: inline-block;
+}
+.code .indent {
+  padding-left: 35px;
+}
+.code .pink {
+  color: #ff1493;
+}
+.code .khaki {
+  color: #f0e68c;
+}
+.code .purple {
+  color: MediumPurple;
+}
+.code .green {
+  color: GreenYellow;
+}
+.code .blue {
+  color: LightSkyBlue;
+}
